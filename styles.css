@@ -410,6 +410,38 @@ body {
 .logo-inline-small { height: 28px; filter: none; }
 .logo-inline-large { height: clamp(56px, 8vw, 96px); filter: none; }
 
+.logos-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.logo-chip {
+  height: clamp(44px, 6vw, 60px);
+  display: flex;
+  align-items: center;
+}
+
+.logo-chip img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-chip-white {
+  background: #fff;
+  border-radius: 16px;
+  padding: 0.9rem 1.4rem;
+  box-sizing: content-box;
+}
+
+.logo-chip-white img {
+  height: 100%;
+}
+
 /* ============ SPLIT LAYOUT ============ */
 
 .slide-split {
