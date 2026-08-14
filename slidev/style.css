@@ -1,0 +1,166 @@
+:root {
+  --bg: #0b0e1a;
+  --bg-alt: #12172b;
+  --bg-card: #151b32;
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #f5f6fa;
+  --text-dim: #9aa1b8;
+  --pink: #ff3d81;
+  --purple: #7c3aed;
+  --blue: #3d8bff;
+  --gradient: linear-gradient(135deg, var(--pink), var(--purple));
+}
+
+.slidev-layout {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 900px 900px at -10% -15%, rgba(255, 61, 129, 0.18), transparent 60%),
+    radial-gradient(ellipse 800px 800px at 110% 115%, rgba(124, 58, 237, 0.18), transparent 60%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.slidev-layout h1 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h3,
+.slidev-layout h4 {
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
+.slidev-layout a {
+  color: var(--pink);
+}
+
+/* gradient text, matches .title-huge / .divider-title / .stat-huge on the static site */
+.slidev-layout .gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.slidev-layout .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  color: var(--pink);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* bento-style cards, matches .bento-card on the static site */
+.slidev-layout .bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.slidev-layout .bento-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.4rem 1.5rem;
+  text-align: left;
+}
+
+.slidev-layout .bento-num {
+  position: absolute;
+  top: -0.6rem;
+  right: 0.4rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.09);
+  line-height: 1;
+  z-index: 0;
+}
+
+.slidev-layout .bento-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 1;
+}
+
+.slidev-layout .bento-desc {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+  margin-top: 0.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* pill badges, matches .badge on the static site */
+.slidev-layout .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* logo chips, matches .logo-chip / .logo-chip-white on the static site */
+.slidev-layout .logo-chip-white {
+  background: #fff;
+  border-radius: 16px;
+  padding: 0.8rem 1.3rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* qr codes with white card, matches .qr-code on the static site */
+.slidev-layout .qr-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+/* flow diagram boxes, matches .flow-box on the static site */
+.slidev-layout .flow-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem 1.3rem;
+  text-align: center;
+}
+
+.slidev-layout .flow-box-title {
+  font-weight: 700;
+}
+
+.slidev-layout .flow-box-sub {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+}
+
+/* divider slides */
+.slidev-layout .divider-index {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
