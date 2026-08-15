@@ -203,7 +203,7 @@ O cadastro é livre, mas virar Ambassador reconhecido pede um pouco mais.
 ::right::
 
 <div class="flex items-center justify-center h-full">
-  <div class="qr-card"><img src="/img/qr-msa.png" class="w-52" /></div>
+  <div class="qr-card"><img src="/img/qr-msa.png" class="w-[240px]" /></div>
 </div>
 
 <!--
@@ -510,11 +510,11 @@ class: text-center
 
 <div class="flex items-center justify-center gap-10 pt-8">
   <div class="text-center">
-    <div class="qr-card"><img src="/img/qr-linkedin.png" class="w-36" /></div>
+    <div class="qr-card"><img src="/img/qr-linkedin.png" class="w-[280px]" /></div>
     <div class="pt-2 text-sm opacity-70">LinkedIn</div>
   </div>
   <div class="text-center">
-    <div class="qr-card"><img src="/img/qr-youtube.png" class="w-36" /></div>
+    <div class="qr-card"><img src="/img/qr-youtube.png" class="w-[280px]" /></div>
     <div class="pt-2 text-sm opacity-70">YouTube</div>
   </div>
 </div>
